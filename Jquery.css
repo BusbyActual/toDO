@@ -1,0 +1,97 @@
+.container-fluid{
+
+  text-align:  center;
+}
+img {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+
+}
+.text{
+  width: 100%;
+  float: bottom;
+  text-align: center;
+  margin-top: 200px;
+}
+.glyphiconIcon{
+ margin-right: 5px;
+ margin-bottom: 5px;
+}
+.destination{
+        float: left;
+        width: 35%;
+        text-align: center;
+        font-family: "comic sans ms";
+      }
+      .destination:li{
+        margin-left: 50px;
+      }
+.sidebar{
+      float: left;
+        width: 30%;
+        text-align: center;
+        font-family: "comic sans ms";
+}
+.btn-circle {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 15px;
+}
+.btn-circle.btn-sm {
+  width: 25px;
+  height: 25px;
+  font-size: 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+
+     text-align:center;
+    font-family:Verdana;
+    font-weight:bold;
+    text-decoration:none;
+ 
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+  .bubble {
+    position: relative;
+    width: 250px;
+    height: 25px;
+    padding: 0px;
+    margin-left: 50px;
+    background: #c3c5d9;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+  .bubble:after {
+    content: "";
+    position: relative;
+    bottom: -0px;
+    left: 69px;
+    border-style: solid;
+    border-width: 0px 15px 0;
+    border-color: #c3c5d9 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
