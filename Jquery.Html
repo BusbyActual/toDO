@@ -1,38 +1,79 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
 <head>
-  <title>HTML Document</title>
 
-  <link rel="stylesheet" type="text/css" href="Jquery.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>jQuery listo Plugin Demo</title>
+ 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ 	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
-<div class="container-fluid">
+<h1 align="center" style="margin:20px auto">Jquery @toDo</h1>
 
-<h1>Let's add to our list of things to do!</h1>
- 
+<div class="jquery-script-clear"></div>
+</div>
+    <div class="container">
+        <div class="col-lg-12">
+            <section class="col-md-4">
+                <div class="panel panel-danger ">
+                    <div class="panel-heading">
+                        <form class="form-group" id="newTaskForm">
+                            <div class="input-group" style="margin-bottom:-40px;">
+                                <div class="input-group-addon" id="saveNewItem"><a href="">Save</a></div>
+                                <div class="input-group-addon" id="cancel"><a href="">Cancel</a></div>
+                                <input class="form-control" type="text" id="newItemInput" placeholder="New Item">
+                            </div>
+                        </form>
+                        <div class='new-item-header'>
+                            <span id="newHeading">New</span>
+                            <a href="#newItem" class="pull-right pencil" id="newListItem" style="">&#9783;</a>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group" id='newList'></ul>
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-4">
+                <div class="panel panel-warning ">
+                    <div class="panel-heading">
+                        In Progress
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group" id="currentList"></ul>
+                    </div>
+                </div>
+            </section>
+            <section class="col-md-4">
+                <div class="panel panel-success ">
+                    <div class="panel-heading">
+                        Archived
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group" id="archivedList"></ul>
+                    </div>
+                </div>
+            </section>
+      </div>
 
-<input type="text" id="input"/>
-<button id="add">Add</button>
 
-<hr/>
+</div>
+<div class="footer">
+	 <p>This website was built using:</p>
+	 <a href="https://jquery.com/">Jquery</a>
+	 <a href="http://www.jqueryscript.net/other/Beautiful-Html5-Todo-App-using-jQuery-Bootstrap-listo.html">Boot strap skeleton</a> 
+	 <a href="http://ryanfait.com/sticky-footer/"> Sticky footer </a>
+</div>
 
-
-<Ul id="todo" class="destination"> Let's do these things</ul>
-
-<ul id="complete" class="destination"> I did the things!</ul>
-<ul id="archived" class="sidebar">Here are some nice things!</ul>
-
-
-<!-- jQuery library -->
+   <!-- jQuery library -->
 <script type="text/javascript"
 src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!-- My external App JS -->
-<script type="text/javascript" src="Jquery.js"></script>
-
-   </div>
+     <script src="test.js"></script>
 </body>
+
 </html>
