@@ -51,7 +51,7 @@ a:hover {
 
 .pencil {
 	font-size:30px; 
-	margin-top:-15px;
+	margin-top: -7px;
 	transition: 0;
 }
 
@@ -98,4 +98,25 @@ a{
 
 h1{
 	  font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
+}
+/* Begin animated checkbox css */
+
+ul a li div {
+  margin: 0 -10px; 
+  margin-right: 12px;
+  background: #2ecc71;
+  width: 0px;
+  height: 25px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.list-group li:nth-child(2n) { background: #f7f7f7; }
+
+.list-group  li:hover div {
+  background-color: rgb(255, 255, 255, 0.2);
+  width: 25px;
+  opacity: 1;
 }
